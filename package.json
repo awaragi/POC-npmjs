@@ -1,0 +1,47 @@
+{
+  "name": "@awaragi/noop",
+  "version": "1.0.0",
+  "description": "A NOOP Test repo and package",
+  "main": "index.js",
+  "private": false,
+  "keywords": [
+    "noop",
+    "poc",
+    "test"
+  ],
+  "author": {
+    "name": "Pierre Awaragi",
+    "email": "pierre@awaragi.com"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awaragi/POC-npmjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/awaragi/POC-npmjs/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "test": "mocha dist/test",
+    "test:ts": "mocha -r ts-node/register src/test/*",
+    "format": "prettier --check ./**/* --write"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^12.20.47",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "prettier": "^2.6.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}
